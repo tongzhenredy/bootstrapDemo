@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-下拉列表</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid blue;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-dropdown.js"></script>-->
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+		
+		<script type="text/javascript">
+	$(document).ready(function() {
+		 
+	});
+ 	
+</script>
+
+	</head>
+	<body>
+		
+		<div class="divself">
+			<p>下拉列表 例子1</p>
+			<div class="space">
+				<div class="navbar navbar-static" id="navbar-example">
+	            
+                <div class="navbar-inner">
+	              <div style="width: auto;" class="container">
+	                <a href="#" class="brand">项目名container称</a>
+	                <ul class="nav">
+	                 
+                      <li class="dropdown">
+	                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">下拉 <b class="caret"></b></a>
+	                    <ul class="dropdown-menu">
+	                      <li><a href="#">动作</a></li>
+	                      <li><a href="#">另一个动作</a></li>
+	                      <li><a href="#">其他</a></li>
+	                      <li class="divider"></li>
+	                      <li><a href="#">另一个链接</a></li>
+	                    </ul>
+	                  </li>
+                      
+	                  <li class="dropdown">
+	                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">下拉 <b class="caret"></b></a>
+	                    <ul class="dropdown-menu">
+	                      <li><a href="#">动作</a></li>
+	                      <li><a href="#">另一个动作</a></li>
+	                      <li><a href="#">其他</a></li>
+	                      <li class="divider"></li>
+	                      <li><a href="#">另一个链接</a></li>
+	                    </ul>
+	                  </li>
+	                </ul>
+                    
+	                <ul class="nav pull-right">
+	                  <li class="dropdown" id="fat-menu">
+	                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">下拉 <b class="caret"></b></a>
+	                    <ul class="dropdown-menu">
+	                      <li><a href="#">动作</a></li>
+	                      <li><a href="#">另一个动作</a></li>
+	                      <li><a href="#">其他</a></li>
+	                      <li class="divider"></li>
+	                      <li><a href="#">另一个链接</a></li>
+	                    </ul>
+	                  </li>
+	                </ul><!--/nav pull-right-->
+                    
+	              </div><!--/container-->
+	            </div>
+	          </div>
+			</div>
+		</div>
+	
+		<div class="divself">
+			<p>下拉列表 例子2 -使用 data-toggle激活下拉列表	</p>
+			<div class="space">
+				 <ul class="nav nav-pills">
+		            <li class="active"><a href="#">规则的链接</a></li>
+		            
+                    <li class="dropdown">
+		              <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉 <b class="caret"></b></a>
+		              <ul class="dropdown-menu" id="menu1">
+						<li><a href="#">动作</a></li>
+		                <li><a href="#">另一个动作</a></li>
+		                <li><a href="#">其他</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">另一个链接</a></li>
+		              </ul>
+		            </li>
+                    
+		            <li class="dropdown">
+		              <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉 <b class="caret"></b></a>
+		              <ul class="dropdown-menu" id="menu2">
+						<li><a href="#">动作</a></li>
+		                <li><a href="#">另一个动作</a></li>
+		                <li><a href="#">其他</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">另一个链接</a></li>
+		              </ul>
+		            </li>
+                    
+		            <li class="dropdown">
+		              <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉 <b class="caret"></b></a>
+		              <ul class="dropdown-menu" id="menu3">
+						<li><a href="#">动作</a></li>
+		                <li><a href="#">另一个动作</a></li>
+		                <li><a href="#">其他</a></li>
+		                <li class="divider"></li>
+		                <li><a href="#">另一个链接</a></li>
+		              </ul>
+		            </li>
+                    
+		          </ul>
+			</div>
+		</div>
+
+
+		<div class="divself">
+			<p>下拉列表 - 可以使用 data-target="#id" 或 href="#id" 激活某个下拉项</p>
+			<div class="space">
+					<ul class="nav nav-pills">
+					  <li><a href="#">规则的链接</a></li>
+					  
+                      <li class="dropdown" id="menutest1">
+					    <a class="dropdown-toggle" data-toggle="dropdown" href="#menutest1">
+					      	下拉项<b class="caret"></b></a>
+					    <ul class="dropdown-menu">
+					      <li><a href="#">动作</a></li>
+					      <li><a href="#">另一个动作</a></li>
+					      <li><a href="#">其他</a></li>
+					      <li class="divider"></li>
+					      <li><a href="#">被间隔的链接</a></li>
+					    </ul>
+					  </li>
+                      
+					  <li class='active'>
+					    <a data-toggle="dropdown" href="#menutest1">点击我看看</a>
+					  </li>
+                      
+					</ul>
+                    
+			</div>
+		</div>		
+		
+		 
+	</body>
+</html>

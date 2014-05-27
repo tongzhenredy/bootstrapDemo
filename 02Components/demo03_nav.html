@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>组件-标签页切换导航 </title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid blue;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+		<script src="../public/js/jquery-1.9.1.js"></script>
+		<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-dropdown.js"></script>
+		<script src="../js/plugins/bootstrap-tab.js"></script>-->
+	</head>
+	<body>
+	<div class="divself">
+		<p>导航列表-导航列表例子</p>
+		<div class="space">
+			<div style="padding: 8px 0;" class="well">
+		        <ul class="nav nav-list">
+		          <li class="nav-header">列表头</li>
+		          <li class="active"><a href="#">首页</a></li>
+		          <li><a href="#">类库</a></li>
+		          <li><a href="#">应用</a></li>
+		          <li class="nav-header">另一个列表头</li>
+		          <li><a href="#">介绍</a></li>
+		          <li><a href="#">设置</a></li>
+		          <li class="divider"></li>
+		          <li><a href="#">帮助</a></li>
+		        </ul>
+		      </div>
+		</div>
+	</div>
+	
+	 <div class="divself">
+		<p>导航列表-使用图标的例子</p>
+		<div class="space">
+			 <div style="padding: 8px 0;" class="well">
+		        <ul class="nav nav-list">
+		          <li class="nav-header">列表头</li>
+		          <li class="active"><a href="#"><i class="icon-white icon-home"></i> 首页</a></li>
+		          <li><a href="#"><i class="icon-book"></i> 类库</a></li>
+		          <li><a href="#"><i class="icon-pencil"></i> 应用</a></li>
+		          <li class="nav-header">另一个列表头</li>
+		          <li><a href="#"><i class="icon-user"></i> 介绍</a></li>
+		          <li><a href="#"><i class="icon-cog"></i> 设置</a></li>
+		          <li class="divider"></li>
+		          <li><a href="#"><i class="icon-flag"></i> 帮助</a></li>
+		        </ul>
+		      </div>
+		</div>
+	</div>
+	
+	<div class="divself">
+			<p>标签页切换导航-标签页切换的例子</p>
+			<div class="space">
+				<div style="margin-bottom: 9px;" class="tabbable">
+			        <ul class="nav nav-tabs">
+			          <li class="active"><a data-toggle="tab" href="#1">段 1</a></li>
+			          <li><a data-toggle="tab" href="#2">段 2</a></li>
+			          <li><a data-toggle="tab" href="#3">段 3</a></li>
+			        </ul>
+                    
+			        <div class="tab-content">
+			          <div id="1" class="tab-pane active">
+			            <p>这里是段1</p>
+			          </div>
+                      
+			          <div id="2" class="tab-pane">
+			            <p>这里是段2</p>
+			          </div>
+                      
+			          <div id="3" class="tab-pane">
+			            <p>这里是段3</p>
+			          </div>
+                      
+			        </div>
+                    
+			      </div>
+			</div>
+	</div>
+	
+	<div class="divself">
+		<p>在多个方向上使用标签切换页-标签置底</p>
+		<div class="space">
+			<div class="tabbable tabs-below">
+		        <div class="tab-content">
+		          <div id="A" class="tab-pane active">
+		            <p>这里是章节A</p>
+		          </div>
+		          <div id="B" class="tab-pane">
+		            <p>这里是章节B</p>
+		          </div>
+		          <div id="C" class="tab-pane">
+		            <p>这里是章节C</p>
+		          </div>
+		        </div>
+		        <ul class="nav nav-tabs">
+		          <li class="active"><a data-toggle="tab" href="#A">第1节</a></li>
+		          <li class=""><a data-toggle="tab" href="#B">第2节</a></li>
+		          <li class=""><a data-toggle="tab" href="#C">第3节</a></li>
+		        </ul>
+		      </div>
+		</div>
+	</div>
+	
+	<div class="divself">
+		<p>在多个方向上使用标签切换页-标签居左</p>
+		<div class="space">
+			<div class="tabbable tabs-left">
+			        <ul class="nav nav-tabs">
+			          <li class="active"><a data-toggle="tab" href="#lA">第1节</a></li>
+			          <li class=""><a data-toggle="tab" href="#lB">第2节</a></li>
+			          <li class=""><a data-toggle="tab" href="#lC">第3节</a></li>
+			        </ul>
+			        <div class="tab-content">
+			          <div id="lA" class="tab-pane active">
+			            <p>这里是章节A</p>
+			          </div>
+			          <div id="lB" class="tab-pane">
+			            <p>这里是章节B</p>
+			          </div>
+			          <div id="lC" class="tab-pane">
+			            <p>这里是章节C</p>
+			          </div>
+			        </div>
+			   </div>
+		</div>
+	</div>
+	
+	 <div class="divself">
+		<p>在多个方向上使用标签切换页-标签居右</p>
+		<div class="space">
+			<div class="tabbable tabs-right" style="width: 200px;">
+			        <ul class="nav nav-tabs">
+			          <li class="active"><a data-toggle="tab" href="#rA">第1节</a></li>
+			          <li><a data-toggle="tab" href="#rB">第2节</a></li>
+			          <li><a data-toggle="tab" href="#rC">第3节</a></li>
+			        </ul>
+			        <div class="tab-content">
+			          <div id="rA" class="tab-pane active">
+			            <p>这里是章节A</p>
+			          </div>
+			          <div id="rB" class="tab-pane">
+			            <p>这里是章节B</p>
+			          </div>
+			          <div id="rC" class="tab-pane">
+			            <p>这里是章节C</p>
+			          </div>
+			        </div>
+			 </div>
+		</div>
+	</div>
+	
+	
+	</body>
+</html>

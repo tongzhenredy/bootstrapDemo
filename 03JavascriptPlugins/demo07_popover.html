@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-弹出提示</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-tooltip.js"></script>
+		<!-- popover基于tooltip -->
+		<!-- <script src="../js/plugins/bootstrap-popover.js"></script>-->
+		<script type="text/javascript">
+	$(document).ready(function() {
+
+		$('.well').popover( {
+			selector : "a[rel='popover']"
+		});
+
+	});
+
+	function btn_showpop() {
+	  $("#popovertest").popover('toggle');
+	}
+</script>
+
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				鼠标经过时的弹出提示例子
+			</p>
+			<div class="space">
+
+				<div class="well">
+					<a
+						data-content="他来自山东，是一名残疾人，因思想独立、指谪政弊而被政府迫害。地方政府和当权政要派专人看管他，调拨专款作为对他的看管费用，他每天都活在别人的监视和囚禁中，其遭遇只能用令人发指来形容。历尽万难，他终于成功逃离了当地，在外国使节的帮助和护送下去到了国外。他，就是孙膑。"
+						rel="popover" class="btn btn-danger" href="#"
+						data-original-title="他是谁">鼠标经过弹出提示</a>
+				</div>
+			</div>
+		</div>
+		
+
+		<div class="divself">
+			<p>
+				手动控制 显示/隐藏
+			</p>
+			<div>
+				
+				<input type="button" onclick="javascript:btn_showpop();" value="手动显示隐藏 pop" />
+				
+				<div id="popovertest"
+					data-content="他来自山东，是一名残疾人，因思想独立、指谪政弊而被政府迫害。地方政府和当权政要派专人看管他，调拨专款作为对他的看管费用，他每天都活在别人的监视和囚禁中，其遭遇只能用令人发指来形容。历尽万难，他终于成功逃离了当地，在外国使节的帮助和护送下去到了国外。他，就是孙膑。"
+					class="btn btn-danger" data-original-title="他是谁">
+					在这里显示
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

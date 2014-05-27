@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基本CSS样式--(4)表单</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+--><!-- Bootstrap -->
+<link href="../public/css/bootstrap.css"  rel="stylesheet" media="screen" type="text/css">
+<style type="text/css">
+.demoshow{
+	padding:10px;
+	margin:20px;
+	border:1px solid blue;
+}
+body{
+	margin:50px;
+}
+</style>
+</head>
+<body>
+<div class="showdemo">
+<fieldset>
+<legend><h1>表格<small>适用于展示扁平化的列表数据</small></h1></legend>
+
+<div class="row">
+<h3>基本表单</h3>
+    <form class="well">
+    <label>标签名称</label>
+    <input type="text" class="span3" placeholder="请输入文字...">
+    <span class="help-inline">相关提示信息</span>
+    <p class="help-block">块状帮助文字...</p>
+    <label class="checkbox">
+    <input type="checkbox"> 选我选我
+    </label>
+    <button type="submit" class="btn">Submit</button>
+    </form>
+</div>
+</fieldset>
+
+<div class="row">
+<h3>表单表单</h3>
+    <form class="well form-search">
+    <input type="text" class="input-medium search-query">
+    <button type="submit" class="btn">搜索</button>
+    </form>
+</div>
+
+<div class="row">
+<h3>行级表单</h3>
+        <form class="well form-inline">
+    <input type="text" class="input-small" placeholder="邮件">
+    <input type="password" class="input-small" placeholder="密码">
+    <label class="checkbox">
+    <input type="checkbox"> 记住我
+    </label>
+    <button type="submit" class="btn">登录</button>
+    </form>
+</div>
+
+<div class="row">
+<h3>水平布局表单 </h3>
+    <form class="form-horizontal">
+<fieldset>
+<legend> Bootstrap支持的控件 </legend>
+<div class="control-group">
+<label class="control-label" for="input01"> 文本输入框 </label>
+<div class="controls">
+<input id="input01" class="input-xlarge" type="text">
+<p class="help-block"> 除了文本域之外，任何HTML5输入框都是该样式 </p>
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="optionsCheckbox"> 复选框 </label>
+<div class="controls">
+<label class="checkbox">
+<input id="optionsCheckbox" type="checkbox" value="option1">
+选择异或不许—使用时最好给出选择的理由
+</label>
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="select01"> 选择框 </label>
+<div class="controls">
+<select id="select01">
+<option> 请选择 </option>
+<option> 2 </option>
+<option> 3 </option>
+<option> 4 </option>
+<option> 5 </option>
+</select>
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="multiSelect"> 复选框 </label>
+<div class="controls">
+<select id="multiSelect" multiple="multiple">
+<option> 1 </option>
+<option> 2 </option>
+<option> 3 </option>
+<option> 4 </option>
+<option> 5 </option>
+</select>
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="fileInput"> 上传框 </label>
+<div class="controls">
+<input id="fileInput" class="input-file" type="file">
+</div>
+</div>
+<div class="control-group">
+<label class="control-label" for="textarea"> 文本域 </label>
+<div class="controls">
+<textarea id="textarea" class="input-xlarge" style="width: 441px; height: 145px;" rows="3"></textarea>
+</div>
+</div>
+<div class="form-actions">
+<button class="btn btn-primary" type="submit"> 保存更改 </button>
+<button class="btn"> 取消 </button>
+</div>
+</fieldset>
+</form>
+</div>
+
+
+</div>
+</body>
+</html>

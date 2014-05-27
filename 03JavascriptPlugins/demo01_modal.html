@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-dropdown.js"></script>
+		<script src="../js/plugins/bootstrap-modal.js"></script>
+		<script src="../js/plugins/bootstrap-transition.js"></script>-->
+
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$('#backdroptrue').on('click', function(evt) {
+			$('#modalbackdroptrue').modal( {
+				backdrop : true
+			});
+		});
+		$('#backdropfalse').on('click', function(evt) {
+			$('#modalbackdropfalse').modal( {
+				backdrop : false
+			});
+		});
+		$('#keyboardtrue').on('click', function(evt) {
+			$('#modalkeyboardtrue').modal( {
+				keyboard : true
+			});
+		});
+		$('#keyboardfalse').on('click', function(evt) {
+			$('#modalkeyboardfalse').modal( {
+				keyboard : false
+			});
+		});
+		$('#amodaltoggle').on('click', function(evt) {
+			$('#modaltoggle').modal('toggle');
+		});
+	});
+</script>
+
+	</head>
+	<body>
+		<div class="divself">
+			<p>对话框- 静态例子</p>
+			<div class="space">
+				<div style="background-color: #888; border: none;"	class="well modal-example">
+					<div style="position: relative; top: auto; left: auto; margin: 0 auto; z-index: 1" 						class="modal">
+						<div class="modal-header">
+							<a data-dismiss="modal" class="close" href="#">×</a>
+							<h3>对话框标题</h3>
+						</div>
+						<div class="modal-body">
+							<p>天朝，你好....	</p>
+						</div>
+						<div class="modal-footer">
+							<a class="btn" href="#">关闭</a>
+							<a class="btn btn-primary" href="#">保存更改</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="divself">
+			<p>动态例子</p>
+			<div class="space">
+				<div class="modal hide fade" id="myModal">
+					
+                    <div class="modal-header">
+						<a data-dismiss="modal" class="close">×</a>
+						<h3>对话框标题</h3>
+					</div>
+                    
+					<div class="modal-body">
+						<h4>对话框文字</h4>
+						<p>高考临近，湖北孝感惊现史上最刻苦“吊瓶班”。这是昨日孝感市第一高级中学某晚自习教室的一幕，"吊瓶高考班"轰动全校！不知台上的老师面对如此震撼的场面和沁人心脾的药水味，如何站稳脚跟hold住全场呢？该校学生表示，备战高考，补充能量挨几针也是值得的，你hold住了吗？</p>
+
+						<h4>对话框中的弹出提示</h4>
+						<p><a data-content="青岛工学院最近下发通知，将考研自习室772个座位“有偿提供”，5元起售，目前已售出500多个座位。根据采光通风等条件不同，座位每月收费划分为5元、10元、15元、20元、25元五个档次，学生购买时要一次交纳10个月的费用。教务处长称， 为了给学生解决考研复习问题，只好“出此下策”。"
+								class="btn popover-test" href="#" data-original-title="花钱买座位">学生真不易</a>
+							把鼠标放上来试试？</p>
+
+						<h4>对话框中的工具提</h4>
+						<p>5月1日，济南一名
+							<a class="tooltip-test" href="#"
+								data-original-title="城管里面也有好人，把他们变成坏人的是恶的制度">城管</a>要对一位抱着三四岁孩子的
+							<a class="tooltip-test" href="#"
+								data-original-title="小商贩真的很辛苦，不要再欺负辛劳人了">女商贩</a>扣留时候发生争执。争执中女商贩抱着孩子给城管下跪,城管见状也向女商贩跪下。事后城管称，下跪是为了与对方“平等对话”,也怕对孩子心理产生不良影响。
+						</p>
+
+						<hr>
+
+						<h4>对溢出文本使用可选的滚动条</h4>
+						<p>我们对<code>.modal-body</code>样式修正了<code>max-height</code>。对于超过高度的内容就会显示滚动条。</p>
+						<p>南京街头某家麦当劳门口，一个外国人买了两包薯条，分给乞讨的老奶奶一包，两人席地而坐，开心地吃着聊着。</p>
+						<p>@说书者一枚
+							：《帝都日爆》射论：《从麦当劳事件看美国小伙的拙劣表演》：这位美国小伙拙劣的”亲民民主表演“，再次印证了中国的古语“黄鼠狼给鸡拜年没安好心”。这道貌岸然的潜伏”美国政客“，想用糖衣炮弹瓦解坚强的中国无产阶级老奶奶，必定遭到中国人民的唾弃！不要做自取其辱的丑事！（完，完蛋的完）</p>
+						<p>4日晚，东莞东城海雅百货前，一女子被偷包，巴西籍男子MOZEN阻止，遭小偷团伙报复群殴。其间数十名路人在场，无人施救。MOZEN说，小偷打他，他觉得正常，可没有任何人帮他，让他觉得不正常，“这个社会是需要互相帮助的，我整天出没在君豪商业中心，中心几乎大部分人都认识我，却没有一个人帮我，这让我觉得很失望，很心寒”。	</p>
+						<p>MOZEN说，海雅百货这一带治安很乱，这已经不是他第一次阻止小偷行窃了，早在今年春节前，他就曾扑倒过一个小偷。可有了这一次的经历，如果下回再碰上类似情况，他不会也不敢再帮忙了。</p>
+						<p>美国总统富兰克林·罗斯福1942年6月14日美国国旗纪念日广播演讲：“我们所有人都是地球的子孙，有些道理不言而喻，如果我们的兄弟在遭受压迫，我们也将遭受压迫，如果他们在忍饥挨饿，我们也将忍饥挨饿，如果他们的自由权利被剥夺，我们的自由也将不复存在......	<a href="http://t.cn/aDoq5K"></a>http://t.cn/aDoq5K	</p>
+					</div>
+                    
+					<div class="modal-footer">
+						<a data-dismiss="modal" class="btn" href="#">关闭</a>
+						<a class="btn btn-primary" href="#">保存更改</a>
+					</div>
+                    
+				</div>
+                
+				<a class="btn btn-primary btn-large" href="#myModal" data-toggle="modal">点击演示</a>
+			</div>
+		</div>
+
+		<div class="divself">
+			<p>有背景</p>
+			<p>我们无须手写javascript即可在页面中触发对话框。只要在某个激发元素上设置 data-toggle="modal" 。<br/>然后将 data-target="#foo" 或 href="#foo" 设为某个对话框元素的id，这样点击激发元素就会弹出对话框。 </p>
+			<div class="space">
+				<div id="modalbackdroptrue" class="modal hide fade">
+					
+                    <div class="modal-header">
+						<a class="close" data-dismiss="modal">&times;</a>
+						<h3>有遮蔽背景</h3>
+					</div>
+					<div class="modal-body">
+						<h4>backdrop为true</h4>
+						<p>有遮蔽背景，点击背景即可关闭对话框。</p>
+					</div>
+					<div class="modal-footer">
+						<a href="#" class="btn" data-dismiss="modal">关闭</a>
+						<a href="#" class="btn btn-primary">保存更改</a>
+					</div>                    
+				</div>				
+				<a id="backdroptrue" class="btn btn-primary btn-mini">点击演示</a>
+			</div>
+		</div>
+		
+		
+		<div class="divself">
+			<p>无背景</p>
+			<div class="space">
+				 <a id="backdropfalse" class="btn btn-primary btn-mini">点击演示</a>
+				 <div class="modal hide fade" id="modalbackdropfalse">
+		            <div class="modal-header">
+		              <a data-dismiss="modal" class="close">×</a>
+		              <h3>无遮蔽背景</h3>
+		            </div>
+		            <div class="modal-body">
+		              <h4>backdrop为false</h4>
+		              <p>对对话框背景使用 <code>static</code> ，无遮蔽，不支持背景click关闭对话框。</p>
+		            </div>
+		            <div class="modal-footer">
+		              <a data-dismiss="modal" class="btn" href="#">关闭</a>
+		              <a class="btn btn-primary" href="#">保存更改</a>
+		            </div>
+		          </div>
+			</div>
+		</div>
+		
+		<div class="divself">
+			<p>ESC可以关闭对话框</p>
+			<div class="space">
+				<a id="keyboardtrue" class="btn btn-primary btn-mini">点击演示</a>
+				
+				<div class="modal hide fade" id="modalkeyboardtrue">
+		            <div class="modal-header">
+		              <a data-dismiss="modal" class="close">×</a>
+		              <h3>按ESC键关闭对话框</h3>
+		            </div>
+		            <div class="modal-body">
+		              <h4>keyboard为true</h4>
+		              <p>
+				按ESC可以关闭对话框，按ESC试试
+			      </p>
+		            </div>
+		            <div class="modal-footer">
+		              <a data-dismiss="modal" class="btn" href="#">关闭</a>
+		              <a class="btn btn-primary" href="#">保存更改</a>
+		            </div>
+		          </div>
+			</div>
+		</div>
+		
+		<div class="divself">
+			<p>ESC不能关闭对话框</p>
+			<div class="space">
+				<a id="keyboardfalse" class="btn btn-primary btn-mini">点击演示</a>
+				
+				<div class="modal hide fade" id="modalkeyboardfalse">
+		            <div class="modal-header">
+		              <a data-dismiss="modal" class="close">×</a>
+		              <h3>按ESC键无法关闭对话框</h3>
+		            </div>
+		            <div class="modal-body">
+		              <h4>keyboard为false</h4>
+		              <p>
+				按ESC不能关闭对话框，按ESC试试
+			      </p>
+		            </div>
+		            <div class="modal-footer">
+		              <a data-dismiss="modal" class="btn" href="#">关闭</a>
+		              <a class="btn btn-primary" href="#">保存更改</a>
+		            </div>
+		          </div>
+				
+			</div>
+		</div>
+		
+
+		<div class="divself">
+			<p>手动切换对话框打开和关闭</p>
+			<div class="space">
+					<a id="amodaltoggle" class="btn btn-primary btn-mini">点我能显示也能关闭</a>
+					
+					<div data-backdrop="false" class="modal hide" id="modaltoggle" style="display: none;">
+			            <div class="modal-header">
+			              <a data-dismiss="modal" class="close">×</a>
+			              <h3>手动触发/关闭对话框</h3>
+			            </div>
+			            <div class="modal-body">
+			              <h4>手动触发/关闭</h4>
+			              <p>
+					再点击一次按钮就会关闭对话框
+				      </p>
+			            </div>
+			            <div class="modal-footer">
+			              <a data-dismiss="modal" class="btn" href="#">关闭</a>
+			              <a class="btn btn-primary" href="#">保存更改</a>
+			            </div>
+			          </div>
+			</div>
+		</div>
+	
+		<div class="divself">
+			<p></p>
+			<div class="space">
+				
+			</div>
+		</div>		
+	</body>
+</html>

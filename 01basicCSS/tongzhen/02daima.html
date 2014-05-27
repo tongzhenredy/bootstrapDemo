@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基本CSS样式--(2)代码</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+--><!-- Bootstrap -->
+<link href="../public/css/bootstrap.css"  rel="stylesheet" media="screen" type="text/css">
+<style type="text/css">
+.demoshow{
+	margin:20px;
+	border:1px solid blue;
+	margin-left:auto;
+}
+body{
+	margin:50px;
+}
+</style>
+</head>
+<body>
+<div class="demoshow well">
+<fieldset>
+<legend>使用模板</legend>
+
+</fieldset>
+</div>
+
+<div class="demoshow">
+<fieldset>
+<legend>代码 行级/块状代码片段</legend>
+<div class="well span4">
+	<h3>代码-行级代码片段 </h3>
+    <p><code>section</code>应该被做为行级代码包装。 </p>
+</div>
+<div class="well span4">
+<h3></h3>
+<p>使用<code>&lt;pre&gt;</code>对多行代码进行包装。 切记一定要对代码中的每个<>进行转义，这样方能得到正常的渲染结果。</p>
+<pre class="prettyprint linenums" style="margin-bottom: 9px;"><ol class="linenums"><li class="L0"><span class="tag">&lt;pre&gt;</span></li><li class="L1"><span class="pln"> &lt;p&gt;示范文本...&lt;/p&gt;</span></li><li class="L2"><span class="tag"></pre></span></li></ol>
+</pre>
+
+</div>
+
+<div class="well span4">
+<h2>Google Prettify 美化代码</h2>
+<p>
+在<code>&lt;pre&gt;</code>元素上应用<code>.prettyprint</code>和<code>.linenums</code>增强代码渲染效果。<code>.linenums</code>用于显示行号。
+</p>
+<pre class="prettyprint linenums" style="margin-bottom: 9px;"><ol class="linenums"><li class="L0"><span class="tag"><p></span><span class="pln">示范文本...</span><span class="tag"></p></span></li>
+</ol>
+</pre>
+<pre class="prettyprint linenums" style="margin-bottom: 9px;"><ol class="linenums">
+<li class="L0"><span class="tag"><pre</span><span class="pln"> </span><span class="atn">class</span><span class="pun">=</span><span class="atv">"prettyprint</span></li>
+<li class="L1"><span class="atv"> linenums"</span><span class="tag">></span></li>
+<li class="L2"><span class="pln"> &lt;p&gt;示范文本...&lt;/p&gt;</span></li>
+<li class="L3"><span class="tag">&lt;/pre&gt;</span></li>
+</ol>
+</pre>
+
+</div>
+
+
+</fieldset>
+</div>
+
+</body>
+</html>

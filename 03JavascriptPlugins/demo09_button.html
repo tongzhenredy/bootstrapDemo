@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-按钮</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+
+		<!--<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-button.js"></script>-->
+		<script type="text/javascript">
+	$(document).ready(function() {
+		$('#fat-btn').click(function() {
+			var btn = $(this)
+			btn.button('loading')
+			setTimeout(function() {
+				btn.button('reset')
+			}, 3000)
+		});
+	});
+</script>
+
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				按钮例子
+			</p>
+			<div class="space">
+
+				 <div class="space">
+					<button class="btn btn-primary" data-loading-text="loading..."
+						id="fat-btn">
+						载入状态
+					</button>
+				</div>
+				 <div class="space">
+					<button data-toggle="button" class="btn btn-primary">
+						单独开关
+					</button>
+				</div>
+				 
+				 <div class="space">
+				     复选
+				 <div data-toggle="buttons-checkbox" class="btn-group">
+                    <button class="btn btn-primary">左</button>
+                    <button class="btn btn-primary">中</button>
+                    <button class="btn btn-primary active">右</button>
+                  </div>
+                  </div>
+                  
+                  <div class="space">
+				      单选
+                  	<div data-toggle="buttons-radio" class="btn-group">
+                    <button class="btn btn-primary">左</button>
+                    <button class="btn btn-primary">中</button>
+                    <button class="btn btn-primary">右</button>
+                  </div>
+                  </div>
+			</div>
+		</div>
+
+	</body>
+</html>

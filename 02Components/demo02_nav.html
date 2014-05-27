@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>组件-导航，标签页，胶囊链接</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+
+
+		<script src="../public/js/jquery-1.9.1.js"></script>
+		<script src="../public/js/bootstrap.js"></script>
+<!--	<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-dropdown.js"></script>-->
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				 轻巧的默认项-基本的标签页
+			</p>
+			<div class="space">
+				 <ul class="nav nav-tabs">
+			        <li class="active"><a href="#">首页</a></li>
+			        <li><a href="#">介绍</a></li>
+			        <li><a href="#">消息</a></li>
+			      </ul>
+			</div>
+		</div>
+		
+		<div class="divself">
+			<p>
+				轻巧的默认项-基本的胶囊链接
+			</p>
+			<div class="space">
+				 <ul class="nav nav-pills">
+			        <li class="active"><a href="#">首页</a></li>
+			        <li><a href="#">介绍</a></li>
+			        <li><a href="#">消息</a></li>
+			      </ul>
+			</div>
+		</div>
+		 
+		<div class="divself">
+			<p>
+				叠放式导航-叠放式标签
+			</p>
+			<div class="space">
+				 <ul class="nav nav-tabs nav-stacked">
+			        <li class="active"><a href="#">首页</a></li>
+			        <li><a href="#">介绍</a></li>
+			        <li><a href="#">消息</a></li>
+			      </ul>
+			</div>
+		</div>
+		
+		<div class="divself">
+			<p>
+				叠放式导航-叠放式胶囊链接
+			</p>
+			<div class="space">
+				<ul class="nav nav-pills nav-stacked">
+			        <li class="active"><a href="#">首页</a></li>
+			        <li><a href="#">介绍</a></li>
+			        <li><a href="#">消息</a></li>
+			     </ul>
+			</div>
+		</div>
+		
+		 <div class="divself">
+			<p>
+				下拉项 - 带下拉项的标签页
+			</p>
+			<div class="space">
+				<ul class="nav nav-tabs">
+			        <li class="active"><a href="#">首页</a></li>
+			        <li><a href="#">帮助</a></li>
+			        <li class="dropdown">
+			          <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉 <b class="caret"></b></a>
+			          <ul class="dropdown-menu">
+				    	<li><a href="#">动作</a></li>
+			            <li><a href="#">其他动作</a></li>
+			            <li><a href="#">其他</a></li>
+			            <li class="divider"></li>
+			            <li><a href="#">被间隔的链接</a></li>
+			          </ul>
+			        </li>
+			        <li class="dropup">
+			          <a href="#" data-toggle="dropdown" class="dropdown-toggle">上弹 <b class="caret bottom-up"></b></a>
+			          <ul class="dropdown-menu bottom-up pull-left">
+				    	<li><a href="#">动作</a></li>
+			            <li><a href="#">其他动作</a></li>
+			            <li><a href="#">其他</a></li>
+			            <li class="divider"></li>
+			            <li><a href="#">被间隔的链接</a></li>
+			          </ul>
+			        </li>
+			      </ul>
+			</div>
+		</div>
+		
+		<div class="divself">
+			<p>下拉项-带下拉的胶囊链接</p>
+			<div class="space">
+				<ul class="nav nav-pills">
+				        <li class="active"><a href="#">首页</a></li>
+				        <li><a href="#">帮助</a></li>
+				        <li class="dropdown">
+				          <a href="#" data-toggle="dropdown" class="dropdown-toggle">下拉 <b class="caret"></b></a>
+				          <ul class="dropdown-menu">
+					    <li><a href="#">动作</a></li>
+				            <li><a href="#">其他动作</a></li>
+				            <li><a href="#">其他</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#">被间隔的链接</a></li>
+				          </ul>
+				        </li>
+				        <li class="dropup">
+				          <a href="#" data-toggle="dropdown" class="dropdown-toggle">上弹 <b class="caret bottom-up"></b></a>
+				          <ul class="dropdown-menu bottom-up pull-left">
+					    <li><a href="#">动作</a></li>
+				            <li><a href="#">其他动作</a></li>
+				            <li><a href="#">其他</a></li>
+				            <li class="divider"></li>
+				            <li><a href="#">被间隔的链接</a></li>
+				          </ul>
+				        </li>
+				      </ul>
+			</div>			
+		</div>
+		 
+	</body>
+</html>

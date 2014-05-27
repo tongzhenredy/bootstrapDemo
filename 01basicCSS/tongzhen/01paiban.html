@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>基本CSS样式--(1)排版</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<!--<meta name="viewport" content="width=device-width, initial-scale=1.0">
+--><!-- Bootstrap -->
+<link href="../public/css/bootstrap.css"  rel="stylesheet" media="screen" type="text/css">
+<style type="text/css">
+.demoshow{
+	margin:20px;
+	border:1px solid blue;
+}
+body{
+	margin:50px;
+}
+</style>
+</head>
+<body>
+<div class="demoshow well">
+<fieldset>
+<legend>使用模板</legend>
+
+</fieldset>
+</div>
+
+<div class="demoshow well">
+<form>
+<fieldset>
+<legend>标题</legend>
+	<h1>h1. 电子科技大学</h1>
+    <h2>h2. 自动化工程学院</h2>
+    <h3>h3. 成都市建设北路二段四号 邮编:610054</h3>
+    <h4>h4. 成都市高新区（西区）西源大道2006号 邮编：611731</h4>
+    <h5>h5. 沙河校区 & 清水河校区</h5>
+    <h6>h6. <a href="http://www.uestc.edu.cn/">UESTC主页：http://www.uestc.edu.cn/</a></h6>
+</fieldset>
+</form>
+</div>
+
+<div class="demoshow well">
+<fieldset>
+<legend>body text例子</legend>
+<p>  电子科技大学原名成都电讯工程学院，是1956年在周恩来总理的亲自部署下，由交通大学（现上海交通大学、西安交通大学）、南京工学院（现东南大学）、华南工学院（现华南理工大学）的电子信息类学科合并创建而成。学校1960年被列为全国重点大学；1997年首批成为国家“211工程”重点建设大学；2001年，教育部、四川省人民政府签署重点共建电子科技大学的协议，学校进入了国家“985工程”重点建设大学的行列；近年来又先后成为教育部-信息产业部、教育部-国防科工委重点共建高校。经过50多年的建设，电子科技大学形成了从本科到硕士研究生、博士研究生等多层次、多类型的人才培养格局，成为一所完整覆盖整个电子类学科，以电子信息科学技术为核心，以工为主，理工渗透，理、工、管、文协调发展的多科性研究型大学。</p>
+<p>学校占地5000余亩，包括清水河校区、沙河校区、九里堤校区三个校区。其中，清水河校区占地4000余亩，总建筑面积约70万㎡，种植银杏、楠木、香樟、水杉、桂花等各类乔木2万多株，基本建成数字化绿色校园。学校拥有纸质馆藏图书252万册，数字文献资源197271GB（包含各类网络数字图书共计722万册），建有现代化的运动场、体育馆、网球场、游泳池、健身馆等体育设施。</p>
+</fieldset>
+</div>
+
+<div class="demoshow well">
+<fieldset>
+<legend>强调，地址，缩写</legend>
+<p><strong>电子科技大学</strong>是<em>国家“985工程”、“211工程”重点建设的教育部直属重点大学</em>，坐落于有“天府之国”之称的西部经济、文化、交通中心——<strong>四川省成都市</strong>。 </p>
+
+<p><code>&lt;address&gt;</code></p>
+
+<p>
+<address>
+<strong>UESTC</strong>
+<br>
+No.2006,Xiyuan Road, HI-TECH Industrial Development Zone(West),Chengdu, China
+<br>
+<a href="mailto:tongzhen@live.com">tongzhen@live.com</a>
+</address>
+</p>
+
+<div>
+<p><strong></strong></p>
+<abbr class="initialism" title="University of Electronic Science and Technology of China">Uestc</abbr>
+中国电子科技大学
+</div>
+</fieldset>
+</div>
+
+<div class="demoshow">
+<fieldset>
+<legend>引用</legend>
+<div class="well span6">
+<blockquote>
+<p>学校设有研究生院、20个学院（部），另有示范性软件学院、继续教育学院、职业教育学院和网络教育学院以及电子科技大学成都学院、电子科技大学中山学院两个独立学院。</p>
+<small>电子科技大学</small>
+</blockquote>
+</div>
+<div class="well span6">
+<blockquote class="pull-right">
+<p>学校设有研究生院、20个学院（部），另有示范性软件学院、继续教育学院、职业教育学院和网络教育学院以及电子科技大学成都学院、电子科技大学中山学院两个独立学院。</p>
+<small>电子科技大学</small>
+</blockquote>
+</div>
+</fieldset>
+</div>
+
+<div class="demoshow">
+<div class="row">
+<fieldset>
+<legend>列表</legend>
+<div class="well span4">
+<h3>无序号</h3>
+<ul>
+	<li>通信工程学院</li>
+    <li>电子工程学院</li>
+    <li>自动化工程学院
+    	<ul>
+        	<li>2009210706班</li>
+            <li>2009210707班</li>
+        </ul>        
+    </li>
+    <li>光电工程学院</li>
+    <li>通信抗干扰国家级重点实验室</li>
+    <li>能源学院</li>
+    <li>…………</li>
+</ul>
+</div>
+
+<div class="well span4">
+<h3>无样式</h3>
+<ul class="unstyled">
+	<li>通信工程学院</li>
+    <li>电子工程学院</li>
+    <li>自动化工程学院
+    	<ul>
+        	<li>2009210706班</li>
+            <li>2009210707班</li>
+        </ul>        
+    </li>
+    <li>光电工程学院</li>
+    <li>通信抗干扰国家级重点实验室</li>
+    <li>能源学院</li>
+    <li>…………</li>
+</ul>
+</div>
+
+<div class="well span4">
+<h3>有序号</h3>
+<ol>
+	<li>通信工程学院</li>
+    <li>电子工程学院</li>
+    <li>自动化工程学院</li>
+    <li>光电工程学院</li>
+    <li>通信抗干扰国家级重点实验室</li>
+    <li>能源学院</li>
+    <li>…………</li>
+</ol>
+</div>
+</div>
+
+<div class="row">
+    <div class="well span4">
+        <h3>描述</h3>
+        <p><code>&lt;dl&gt;</code></p>
+        <dl>
+        <dt>描述列表</dt>
+        <dd>适用于术语的定义/解释</dd>
+        <dt>Django</dt>
+        <dd>Django 是一种高级的基于python的web开发框架；</dd>
+        <dd>Django推崇一种快速,整洁而且实用主义哲学的设计及开发方式</dd>
+        <dt>Tornado</dt>
+        <dd>Tornado 是 FriendFeed 使用的可扩展的非阻塞式 web 服务器及其相关工具的开源版本。</dd>
+        </dl>
+    </div>
+    <div class="well span8">
+        <h3>水平状态的描述</h3>
+        <p>
+        <code>&lt;dl class="dl-horizontal"&gt;</code>
+        </p>
+        <dl class="dl-horizontal">
+        <dt>描述列表</dt>
+        <dd>适用于术语的定义/解释</dd>
+        <dt>Django</dt>
+        <dd>Django 是一种高级的基于python的web开发框架；</dd>
+        <dd>Django推崇一种快速,整洁而且实用主义哲学的设计及开发方式</dd>
+        <dt>Tornado</dt>
+        <dd>Tornado 是 FriendFeed 使用的可扩展的非阻塞式 web 服务器及其相关工具的开源版本。</dd>
+        </dl>
+    </div>
+</div>
+</fieldset>
+</div>
+
+</body>
+</html>

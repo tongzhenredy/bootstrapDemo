@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>组件-通知,进度条,杂项</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid blue;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+		<script src="../public/js/jquery-1.9.1.js"></script>
+		<script src="../public/js/bootstrap.js"></script>
+		<!--<script src="../js/plugins/bootstrap-dropdown.js"></script>
+		<script src="../js/plugins/bootstrap-alert.js"></script>-->
+	</head>
+	<body>
+	<div class="divself">
+		<p>通知 - 通知例子1</p>
+		<div class="space">
+			    <div class="alert">
+			    <a class="close" data-dismiss="alert">×</a>
+			    <strong>警告！</strong> 不要拿法律当挡箭牌。
+			    </div>
+		</div>
+	</div>
+	
+	<div class="divself">
+		<p>通知 - 通知例子2</p>
+		<div class="space">
+			    <div class="alert alert-block">
+			    <a class="close" data-dismiss="alert">×</a>
+			    <h4 class="alert-heading">Warning!</h4>
+			    Best check yo self, you're not...
+			    </div>
+		</div>
+	</div>
+
+	<div class="divself">
+		<p>语境下的强化 - 危险/错误</p>
+		<div class="space" style="width: 400px;">
+			  <div class="alert alert-error">
+		        <a data-dismiss="alert" class="close">×</a>
+		        <strong>前进进！</strong> 紧密团结在以希特勒元首为核心的纳粹党中央周围，高举国家意志和民族利益的大旗，直达人间地狱。
+		      </div>
+		
+			  <div class="alert alert-success">
+		        <a data-dismiss="alert" class="close">×</a>
+		        <strong>钱贱贱！</strong> 紧密团结在以胡锦涛同志为核心的党中央周围，高举科学发展观大旗，为建设有中国特色的社会主义事业前腐后继。
+		      </div>
+      
+      		 <div class="alert alert-info">
+	          <a data-dismiss="alert" class="close">×</a>
+	          <strong>杀尽尽！</strong> 紧密团结在以斯大林同志为核心的苏共中央周围，高举马列2B主义大旗，加速实现共产主义。
+	         </div>
+		</div>
+	</div>
+	
+	
+	<div class="divself">
+		<p>进度条-基本效果</p>
+		<div class="space" style="width:200px;">
+			    <div class="progress">
+				    <div class="bar" style="width: 60%;"></div>
+				</div>
+				
+			    <div class="progress progress-striped">
+			    	<div class="bar"  style="width: 20%;"></div>
+			    </div>
+			    
+			   	<br/>
+			    <p>(动画效果IE不支持)</p>
+		        <div class="progress progress-striped  active">
+			    	<div class="bar" style="width: 40%;"></div>
+			    </div>
+		</div>			
+	</div>
+	
+	<div class="divself">
+		<p>其他颜色</p>
+		<div class="space" style="width:400px;">
+			 <div style="margin:2px 0 9px 0;" class="progress progress-info">
+		        <div style="width: 20%" class="bar"></div>
+		     </div>
+		      
+		     <div style="margin:2px 0 9px 0;" class="progress progress-success">
+		        <div style="width: 40%" class="bar"></div>
+		     </div>
+
+			<div style="margin:2px 0 9px 0;" class="progress progress-warning">
+			     <div style="width: 60%" class="bar"></div>
+			</div>
+
+			<div style="margin:2px 0 9px 0;" class="progress progress-danger">
+			    <div style="width: 80%" class="bar"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="divself">
+		<p>条纹滚动条</p>
+		<div class="space" style="width:400px;">
+			<div style="margin:2px 0 9px 0;" class="progress progress-info progress-striped">
+		        <div style="width: 20%" class="bar"></div>
+		    </div>
+		      
+			<div style="margin:2px 0 9px 0;" class="progress progress-success progress-striped">
+			    <div style="width: 40%" class="bar"></div>
+			</div>
+
+			<div style="margin:2px 0 9px 0;" class="progress progress-warning progress-striped">
+			    <div style="width: 60%" class="bar"></div>
+		    </div>
+					    
+			<div style="margin:2px 0 9px 0;" class="progress progress-danger progress-striped">
+			    <div style="width: 80%" class="bar"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="divself">
+		<p>行为</p>
+		<div class="space" style="width:400px;">
+			<div style="margin:2px 0 9px 0;" class="progress progress-info progress-striped active">
+		        <div style="width: 20%" class="bar"></div>
+		    </div>
+		      
+			<div style="margin:2px 0 9px 0;" class="progress progress-success progress-striped active">
+			    <div style="width: 40%" class="bar"></div>
+			</div>
+
+			<div style="margin:2px 0 9px 0;" class="progress progress-warning progress-striped active">
+			     <div style="width: 60%" class="bar"></div>
+		    </div>
+					    
+			<div style="margin:2px 0 9px 0;" class="progress progress-danger progress-striped active">
+			     <div style="width: 80%" class="bar"></div>
+			</div>
+		</div>
+	</div>
+	
+	
+	<div class="divself">
+		<p>杂项-消息墙</p>
+		
+        <div class="space" style="width:400px;">
+			 <div class="well">
+				来看呀来看呀，这就是消息墙！
+      		 </div>
+		</div>
+	</div>
+	
+	
+	<div class="divself">
+		<p>杂项-关闭图标</p>
+		<div class="space" style="width:400px;">
+			<a style="float: none;" class="close">×</a>
+		</div>
+	</div>
+	
+	
+   </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>框架--流式栅格系统--百分比-12等分</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+body {
+	margin: 0px auto;
+}
+
+.divself {
+	margin: 20px;
+	border: 1px solid blue;
+}
+</style>
+	</head>
+	<body>
+
+
+		<div class="divself">
+			<label>流式栅格系统</label>
+			<p>列横排</p>
+			<div class="row-fluid">
+				<div class="span4">
+					<div class="divself">三分之一</div>
+				</div>
+				<div class="span8">
+					<div class="divself">三分之二</div>
+				</div>
+			</div><!--/row-fluid-->
+		</div>
+
+		<div class="divself">
+			<label>流式栅格系统</label>
+			<p>列嵌套</p>
+			
+            <div class="row-fluid">
+				<div class="span12">
+					<div class="row-fluid" style="border:1px solid red;">
+						<div class="span4">
+							<div class="divself">三分之一</div>
+						</div>
+						<div class="span8">
+							<div class="divself">三分之二</div>
+						</div>
+					</div><!--/row-fluid-->
+				</div>
+			</div><!--/row-fluid-->
+		</div>
+
+
+
+	</body>
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-alert</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-alert.js"></script>-->
+		<script type="text/javascript">
+	$(document).ready(function() {
+		 
+		
+	});
+	function closeAlert() {
+		 $("#ashow1").alert("close");
+	}
+	
+	function showAlert2()
+	{
+		alert("更改bootstrap-alert.js,把.remove()改为.hide()");
+		//$("#ashow2").alert("close");
+	}
+	
+	function closeAlert2()
+	{
+		$("#ashow2").alert("close");
+	}
+	
+</script>
+
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				显示通知  示例1
+			</p>
+			<div class="space" style="width:200px;">
+				<div class="alert fade in">
+		            <a href="#" data-dismiss="alert" class="close">×</a>
+		            <strong>警告！</strong> 在贵国遵守宪法就要违反刑法。
+		         </div>
+			</div>
+		</div>
+		
+		<div class="divself">
+			<p>显示通知 示例2</p>
+			<div class="space" style="width:400px;">
+		             <div class="alert alert-block alert-error fade in">
+			            <a href="#" data-dismiss="alert" class="close">×</a>
+			            <h4 class="alert-heading">微博控们注意了！</h4>
+			            <p>
+				      	出游微博晒幸福时，最好不要泄露出游时间、人数，别泄露住址，谨慎晒出游照片，以免让贼判断出你家是否有人。因为小偷说不定会盯上你的微博，“随着微博的发展，贼也很时尚啊！”
+				    	</p>
+			            <p>
+			              <a href="#" class="btn btn-danger">接受建议</a> <a href="#" class="btn">不当回事</a>
+			            </p>
+			          </div>
+			</div>
+		</div>
+		
+		
+				
+		 
+		
+		<div class="divself">
+			
+			<p>关闭提示</p>
+			<div class="space">
+					<div><input type="button"  onclick="javascript:closeAlert();" value="关闭提示"/></div>
+					<div class="alert fade in"  style="width: 200px;">
+			            <a href="#" class="close"  id="ashow1"></a>
+			            <strong>警告！</strong> 在贵国遵守宪法就要违反刑法。
+			        </div>
+			</div>
+		</div>
+
+
+	
+		<div class="divself">
+			
+			<p>显示</p>
+			
+			<div class="space">
+					<div><input type="button"  onclick="javascript:closeAlert2();" value="关闭提示"/></div>
+					<div><input type="button"  onclick="javascript:showAlert2();" value="显示提示"/></div>
+					<div class="alert fade in"  style="width: 200px;">
+			            <a href="#" class="close"  id="ashow2"></a>
+			            <strong>警告！</strong> 在贵国遵守宪法就要违反刑法。
+			        </div>
+			</div>
+		</div>
+		
+
+		 
+	</body>
+</html>

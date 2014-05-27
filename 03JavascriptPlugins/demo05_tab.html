@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-可切换的标签页</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-tab.js"></script>
+		<script src="../js/plugins/bootstrap-dropdown.js"></script>-->
+		<script type="text/javascript">
+	//设置默认选中那个
+	$(document).ready(function() {
+		$('#tabId a:last').tab('show')
+	});
+</script>
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				可切换标签页-示例1
+			</p>
+			<p>
+				在某个元素上设置 data-toggle="tab" 或 data-toggle="pill"
+				而无须编写javascript，就可以激活标签页或是胶囊链接
+			</p>
+			<div class="space">
+				<ul id="tabId" class="nav nav-tabs">
+					<li class="active"><a href="#home" data-toggle="tab">首页</a></li>
+					<li><a href="#profile" data-toggle="tab">介绍</a></li>
+					<li><a href="#messages" data-toggle="tab">消息</a></li>
+					<li><a href="#settings" data-toggle="tab">设置</a></li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="home">首页content</div>
+					<div class="tab-pane" id="profile">介绍content</div>
+					<div class="tab-pane" id="messages">消息content</div>
+					<div class="tab-pane" id="settings">设置content</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<div class="divself">
+			<p>
+				可切换标签页-示例2-含有下拉列表
+			</p>
+			<div class="space">
+				<ul class="nav nav-tabs">
+					<li class="active"><a href="#home2" data-toggle="tab">首页</a></li>
+					<li><a href="#profile2" data-toggle="tab">介绍</a></li>
+					<li class="dropdown">
+		              <a data-toggle="dropdown" class="dropdown-toggle" href="#">下拉 <b class="caret"></b></a>
+		              <ul class="dropdown-menu">
+		                <li class=""><a data-toggle="tab" href="#dropdown1">智慧</a></li>
+		                <li class=""><a data-toggle="tab" href="#dropdown2">夜壶</a></li>
+		              </ul>
+		            </li>
+				</ul>
+
+				<div class="tab-content">
+					<div class="tab-pane active" id="home2">首页content</div>
+					<div class="tab-pane" id="profile2">介绍content	</div>
+					<div class="tab-pane" id="dropdown1">智慧xxx</div>
+					<div class="tab-pane" id="dropdown2">夜壶yyy</div>
+				</div>
+
+
+			</div>
+		</div>
+		
+	</body>
+</html>

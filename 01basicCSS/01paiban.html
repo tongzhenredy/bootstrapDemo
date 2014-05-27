@@ -1,0 +1,212 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>基础css-排版</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	margin: 20px;
+	border: 1px solid red;
+}
+</style>
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				标题
+			</p>
+			<div class="well">
+				<h1>
+					h1. 中国共产党万岁
+				</h1>
+				<h2>
+					h2. 千年王八万年龟
+				</h2>
+				<h3>
+					h3. 我们在下一盘很大的棋
+				</h3>
+				<h4>
+					h4. 官人，你这麻将打成相公了
+				</h4>
+				<h5>
+					h5. 发言人：谁说中国互联网不自由了？
+				</h5>
+				<h6>
+					h6. 404 error&#12288;网址找不到
+				</h6>
+			</div>
+		</div>
+
+
+		<div class="divself">
+			<p>
+				强调，地址，缩写
+			</p>
+
+			<strong>强调</strong>
+			<br>
+			<em>倾斜</em>
+			<br>
+			<abbr title="中国共产党少年先锋敢死队">当鼠标经过时显示缩写词完整含义</abbr>
+			<br>
+			<address title="中国共产党少年先锋敢死队">
+				当鼠标经过时显示缩写词完整含义
+			</address>
+			<br>
+		</div>
+
+		<div class="divself">
+			<p>
+				引用
+			</p>
+			<div stye="clear:both;">
+				<blockquote cite="http://www.baidu.com">
+					<p>
+						一天吃六个胶囊，一天三次、一次两个，没有吃掉多少铬。
+					</p>
+					<small>卫生部合理用药专家孙忠实</small>
+				</blockquote>
+			</div>
+		</div>
+
+		<div class="divself">
+			<p>
+				列表---无序号
+			</p>
+			<ul>
+				<li>
+					Django是个好框架
+				</li>
+				<li>
+					Uliweb是个好框架
+					<ul>
+						<li>
+							MVT模型
+						</li>
+						<li>
+							组织结构
+						</li>
+						<li>
+							资源共享的处理方式
+						</li>
+					</ul>
+				</li>
+				<li>
+					Bottle是个好框架
+				</li>
+				<li>
+					Rails是个好框架
+				</li>
+				<li>
+					Yii是个好框架
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="divself">
+			<p>
+				列表---无样式
+			</p>
+			<ul class="unstyled">
+				<li>
+					Django是个好框架
+				</li>
+				<li>
+					Uliweb是个好框架
+					<ul>
+						<li>
+							资源共享的处理方式
+						</li>
+					</ul>
+				</li>
+				<li>
+					Bottle是个好框架
+				</li>
+			</ul>
+		</div>
+
+		<div class="divself">
+			<p>
+				列表---有序号
+			</p>
+			<ol>
+				<li>
+					Django是个好框架
+				</li>
+				<li>
+					Uliweb是个好框架
+					<ul>
+						<li>
+							资源共享的处理方式
+						</li>
+					</ul>
+				</li>
+				<li>
+					Bottle是个好框架
+				</li>
+			</ol>
+		</div>
+
+		<div class="divself">
+			<p>
+				列表---描述
+			</p>
+				
+			<dl>
+		        <dt>描述列表</dt>
+		        <dd>适用于术语的定义/解释</dd>
+		        <dt>Django</dt>
+		        <dd>Django 是一种高级的基于python的web开发框架；</dd>
+				<dd>Django推崇一种快速,整洁而且实用主义哲学的设计及开发方式</dd>
+		        <dt>Tornado</dt>
+		        <dd>Tornado 是 FriendFeed 使用的可扩展的非阻塞式 web 服务器及其相关工具的开源版本。</dd>
+		    </dl>
+		    
+		</div>
+	
+		<div class="divself">
+			<p>
+				列表---水平描述
+			</p>
+			<dl class="dl-horizontal">
+			        <dt>描述列表</dt>
+			        <dd>适用于术语的定义/解释</dd>
+					<dt>Django</dt>
+			        <dd>Django 是一种高级的基于python的web开发框架；</dd>
+					<dd>Django推崇一种快速,整洁而且实用主义哲学的设计及开发方式</dd>
+			        <dt>Tornado</dt>
+			        <dd>Tornado 是 FriendFeed 使用的可扩展的非阻塞式 web 服务器及其相关工具的开源版本。</dd>
+			</dl>
+		</div>
+
+		
+		<div class="divself">
+			<p>
+				代码-行级代码片段
+			</p>
+			例如，<code>section</code> 应该被做为行级代码包装。
+			
+		</div>
+		
+		
+		<div class="divself">
+			<p>
+				代码-基本块状内容
+			</p>
+			<pre>示范文本</pre>
+			
+		</div>
+		
+	
+		<div class="divself">
+			<p>
+				代码-Google Prettify 美化代码
+			</p>
+			<pre class="prettyprint linenums">示范文本</pre>
+			
+		</div>
+
+	</body>
+</html>

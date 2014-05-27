@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-可切换的标签页</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid blue;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-tooltip.js"></script>-->
+		<script type="text/javascript">
+			$(document).ready(function(){
+				 	$('.tooltip-demo.well').tooltip(
+					 	{
+						 selector: "a[rel=tooltip]"
+						});
+														
+			});
+			
+			function showtest01()
+			{
+				$('#tooltip_test01').tooltip('toggle');
+				$('#tooltip_test02').tooltip('toggle');
+			}
+			
+		</script>
+		
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				工具提示的用例
+			</p>
+			<div class="space">
+				<div class="tooltip-demo well">
+		            <p style="margin-bottom: 0;" class="muted">
+			      “这是我的第一次英文访问,很抱歉它不够严谨,但是我不得不这么做,不只因为采访时间限制，更因为我面对的是卡梅隆，这个人喜爱挑战、从无畏惧，他也希望别人如此，他可以原谅不完美，但他无法接受一个人不去努力接近自己的极限。”
+			      &mdash;&mdash;<a rel="tooltip" href="#" data-original-title="柴静始终站在离新闻最近的地方，她以她的犀利和敏锐、坚定与坚持，最终历练成为一名优秀的新闻工作者。 ">柴静</a>《看见》专访<a rel="tooltip" href="#" data-original-title="1954年8月16日生于加拿大的著名电影导演，擅长拍摄动作片以及科幻电影。">卡梅隆</a>
+		            </p>
+		          </div>
+			</div>
+		</div>
+		
+		
+		<div class="divself">
+			<p>
+			   手动控制  显示/隐藏
+			</p>
+			<div>
+					<input type="button" onclick="javascript:showtest01();" value="显示隐藏div"/>
+					
+					<a id="tooltip_test01" href="#" data-original-title="提示一下!">a 卡梅隆</a>
+					
+					<div id="tooltip_test02"  data-original-title="1954年8月16日" style="width:200px;border:1px solid red; margin:100px;"> div 卡梅隆</div>
+					
+			</div>
+		</div>
+		
+	</body>
+</html>

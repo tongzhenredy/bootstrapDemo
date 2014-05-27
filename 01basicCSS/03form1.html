@@ -1,0 +1,257 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>基础css-表单</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+
+ 
+</style>
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				表单单例
+			</p>
+			<div class="space">
+				<form class="well">
+					<label>
+						标签名称
+					</label>
+					<input type="text" class="span3" placeholder="请输入文字...">
+					<span class="help-inline">相关提示信息</span>
+					<p class="help-block">
+						块状帮助文字...
+					</p>
+					<label class="checkbox">
+						<input type="checkbox">
+						选我选我
+					</label>
+					<button type="submit" class="btn">
+						Submit
+					</button>
+				</form>
+			</div>
+
+		</div>
+
+
+
+		<div class="divself">
+			<p>
+				表单表单
+			</p>
+			<div class="space">
+				<form class="well form-search">
+					<input type="text" class="input-medium search-query">
+					<button type="submit" class="btn">
+						搜索
+					</button>
+				</form>
+			</div>
+		</div>
+
+
+
+		<div class="divself">
+			<p>
+				行级表单
+			</p>
+			<div class="space">
+				<form class="well form-inline">
+					<input type="text" class="input-small" placeholder="邮件">
+					<input type="password" class="input-small" placeholder="密码">
+					<label class="checkbox">
+						<input type="checkbox">
+						记住我
+					</label>
+					<button type="submit" class="btn">
+						登录
+					</button>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="divself">
+			<p>
+				水平布局表单
+			</p>
+			<div class="space">
+				<form class="form-horizontal" >
+					<fieldset>
+						<legend>
+							Bootstrap支持的控件
+						</legend>
+						<div class="control-group">
+							<label for="input01" class="control-label">
+								文本输入框
+							</label>
+							<div class="controls">
+								<input type="text" id="input01" class="input-xlarge">
+								<p class="help-block">
+									除了文本域之外，任何HTML5输入框都是该样式
+								</p>
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="optionsCheckbox" class="control-label">
+								复选框
+							</label>
+							<div class="controls">
+								<label class="checkbox">
+									<input type="checkbox" value="option1" id="optionsCheckbox">
+									选择异或不许&mdash;使用时最好给出选择的理由
+								</label>
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="select01" class="control-label">
+								选择框
+							</label>
+							<div class="controls">
+								<select id="select01">
+									<option>
+										请选择
+									</option>
+									<option>
+										2
+									</option>
+									<option>
+										3
+									</option>
+									<option>
+										4
+									</option>
+									<option>
+										5
+									</option>
+								</select>
+							</div>
+
+						</div>
+						<div class="control-group">
+							<label for="multiSelect" class="control-label">
+								复选框
+							</label>
+							<div class="controls">
+								<select id="multiSelect" multiple="multiple">
+									<option>
+										1
+									</option>
+									<option>
+										2
+									</option>
+									<option>
+										3
+									</option>
+									<option>
+										4
+									</option>
+									<option>
+										5
+									</option>
+								</select>
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="fileInput" class="control-label">
+								上传框
+							</label>
+							<div class="controls">
+								<input type="file" id="fileInput" class="input-file">
+							</div>
+						</div>
+						<div class="control-group">
+							<label for="textarea" class="control-label">
+								文本域
+							</label>
+							<div class="controls">
+								<textarea rows="3" id="textarea" class="input-xlarge"
+									style="width: 441px; height: 145px;"></textarea>
+							</div>
+						</div>
+						<div class="form-actions">
+							<button class="btn btn-primary" type="submit">
+								保存更改
+							</button>
+							<button class="btn">
+								取消
+							</button>
+						</div>
+					</fieldset>
+				</form>
+			</div>
+		</div>
+
+
+		<div class="divself">
+			<p>
+				表单-水平布局和垂直布局融合
+			</p>
+			<p>
+				实际上是 多个字段域合并在一起作为一行，多行垂直布局
+			</p>
+			<form class="form-inline">
+				<div class="control-group">
+					<input type="text" placeholder="邮件" class="input-small">
+					<input type="password" placeholder="密码" class="input-small">
+					<label class="checkbox">
+						<input type="checkbox">
+						记住我
+					</label>
+					<button class="btn" type="submit">
+						登录
+					</button>
+				</div>
+				
+				<div class="control-group">
+					<input type="text" placeholder="邮件" class="input-small">
+					<input type="password" placeholder="密码" class="input-small">
+					<label class="checkbox">
+						<input type="checkbox">
+						记住我
+					</label>
+					<button class="btn" type="submit">
+						登录
+					</button>
+				</div>
+				
+						<div class="control-group">
+							<label for="textarea" class="control-label">
+								文本域
+							</label>
+							<div class="controls">
+								<textarea rows="3" id="textarea" class="input-xlarge"
+									style="width: 441px; height: 145px;"></textarea>
+							</div>
+						</div>
+						<div class="form-actions">
+							<button class="btn btn-primary" type="submit">
+								保存更改
+							</button>
+							<button class="btn">
+								取消
+							</button>
+						</div>
+
+			</form>
+
+		</div>
+
+
+
+
+
+	</body>
+</html>

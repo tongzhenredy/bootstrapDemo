@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>javascript-插件-collapse</title>
+		<link href="../public/css/bootstrap.css" rel="stylesheet">
+		<style>
+.divself {
+	padding: 10px;
+	margin: 20px;
+	border: 1px solid red;
+}
+
+.space {
+	margin: 10px;
+}
+</style>
+<script src="../public/js/jquery-1.9.1.js"></script>
+<script src="../public/js/bootstrap.js"></script>
+<!--		<script src="../js/jquery-1.7.2.min.js"></script>
+		<script src="../js/plugins/bootstrap-collapse.js"></script>-->
+		<script type="text/javascript">
+	$(document).ready(function() {
+			
+			 //指定选项卡关闭的时候触发
+		     $('#collapseOne').on('hidden', function () {
+		    	alert($(this).html());
+		    });
+	});
+</script>
+
+	</head>
+	<body>
+		<div class="divself">
+			<p>
+				按钮例子
+			</p>
+			<div class="space" style="width: 400px;">
+				<div id="accordion2" class="accordion">
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseOne" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  国土问题
+                </a>
+              </div>
+              <div class="accordion-body collapse in" id="collapseOne">
+                <div class="accordion-inner">
+		  前一段时间一个段子说，某国的网民在因国土问题与中国网民争吵时说，我要打到北京，中国的网民非常淡然地回应，就你那经济水平，交得起过路费吗？这两天新的段子说，李白要是活在今天的话，估计一大半以上他的诗根本写不出来，因为名山大川的门票他根本买不起。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseTwo" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  门票问题
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseTwo">
+                <div class="accordion-inner">
+		  目前，中国半数5A级景区门票达到100元，黄山门票10年来由80元涨至230元。山东曲阜称，与同类景区相比收费较低，仅收150元，不涨票价就丢身价。曲阜的孔庙、孔府和孔林，年收入1.5亿元左右，全部上缴了地方财政，但景区维护成本从未公开。
+                </div>
+              </div>
+            </div>
+            <div class="accordion-group">
+              <div class="accordion-heading">
+                <a href="#collapseThree" data-parent="#accordion2" data-toggle="collapse" class="accordion-toggle">
+                  超生罚款
+                </a>
+              </div>
+              <div class="accordion-body collapse" id="collapseThree">
+                <div class="accordion-inner">
+		  学者杨支柱因生二胎被取消公职，并罚款24万余元。他称，计生罚款以前直接叫超生罚款，入世后改成“社会抚养费”。根据9省市超生罚款的平均数，全国31个省市每年征收的超生罚款可高达279亿元。其中大城市将该收入上缴财政，而地方则分配混乱，部分罚款去向成谜。
+                </div>
+              </div>
+            </div>
+          </div>
+			</div>
+		</div>
+	</body>
+</html>
